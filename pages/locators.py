@@ -6,6 +6,10 @@ class BasePageLocators(object):
     VIEW_CART_BUTTON = (By.CSS_SELECTOR, "div.basket-mini a")
     USER_ICON = (By.CSS_SELECTOR, ".icon-user")
     
+class CartPageLocators(object):
+    EMPTY_CART_MESSAGE = (By.CSS_SELECTOR, "div.content div#content_inner p")
+    ITEM_IN_CART = (By.CSS_SELECTOR, "div.basket-items .row")
+    
 class LoginPageLocators(object):
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
     REGISTER_FORM = (By.CSS_SELECTOR, "register_form")
